@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Horizontally Center a Div Using CSS</title>
+<style>
+@media only screen and (min-width: 768px) {
+    .header-container, .main-container, .footer-container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    } 
+    .header-container, .footer-container{
+        background: #333;
+        color: #fff;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+     .header-container{
+        top:0;
+        width:960px;
+        height:80px;
+    } 
+    .main-container{
+        width:960px;
+        margin: 0 auto; 
+        margin-bottom:358px;
+     }
+    .footer-container{
+        bottom: 0;
+        width:960px;
+        height:80px;
+        background-color:red;
+        transition: background 0.5s ease-in-out;
+    }
+    .footer-container:hover{
+        background-color:blue;
+    }
+    h1{
+        color:white;
+        }
+        #burger{
+                margin-right:20px;      
+        }
+}
+</style>
+</head>
+<body>
+    <div class="header-container">
+        <img id="burger" src="https://image.freepik.com/free-vector/burger-icon-fast-food-collection-isolated-food-icon_194824-6.jpg" width="70px" height="70px" style="float:left";>
+        <h1>Burger King</h1>
+    </div>
+   <div class="main-container">Your Order Is Ready!!!
+    </div>
+    <div class="footer-container">
+    </div>
+</body>
+</html>
